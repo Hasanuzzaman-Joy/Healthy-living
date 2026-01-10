@@ -395,23 +395,14 @@ section {
 }
 
 .stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-blue), var(--light-blue));
-    transform: scaleX(0);
-    transition: transform 0.4s ease;
+    display: none;
 }
 
 .stat-card:hover::before {
-    transform: scaleX(1);
+    display: none;
 }
 
 .stat-card:hover {
-    transform: translateY(-8px);
     box-shadow: var(--shadow-blue);
     border-color: var(--primary-blue);
 }
@@ -485,7 +476,6 @@ section {
 }
 
 .tip-card:hover {
-    transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
     border-color: var(--primary-blue);
     background: var(--very-pale-blue);
@@ -499,7 +489,7 @@ section {
 }
 
 .tip-card:hover .tip-icon {
-    transform: scale(1.1) rotate(5deg);
+    transform: none;
 }
 
 .tip-title {
@@ -544,7 +534,7 @@ section {
 }
 
 .gallery-item:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: scale(1.02);
     box-shadow: var(--shadow-blue);
 }
 
@@ -626,7 +616,6 @@ section {
 }
 
 .testimonial-card:hover {
-    transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
     border-color: var(--primary-blue);
 }
@@ -770,7 +759,6 @@ section {
 }
 
 .cta-primary:hover {
-    transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
     color: var(--primary-blue);
 }
@@ -784,7 +772,6 @@ section {
 .cta-secondary:hover {
     background: rgba(255, 255, 255, 0.2);
     color: var(--white);
-    transform: translateY(-3px);
 }
 
 /* ============================================
@@ -843,7 +830,6 @@ section {
 }
 
 .resource-link:hover {
-    transform: translateY(-4px);
     box-shadow: var(--shadow-blue);
     color: var(--white);
     background: var(--light-blue);
